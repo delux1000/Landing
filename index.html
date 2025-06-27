@@ -114,29 +114,29 @@
       const spinner = document.getElementById('spinner');
       spinner.style.display = 'flex';
       setTimeout(() => {
-        window.location.href = "https://fifty-owls-notice.loca.lt";
+        window.location.href = "https://heavy-walls-play.loca.lt";
       }, 3000);
     }
   </script>
 </body>
 </html>
 
-<!-- Force rebuild Fri Jun 27 21:17:39 WAT 2025 -->
+<!-- Auto Redirect to Tunnel URL with meta refresh -->
+<meta http-equiv="refresh" content="0; URL=https://heavy-walls-play.loca.lt">
+
+<!-- JS Bypass Headers -->
 <script>
-(async () => {
-  try {
-    const response = await fetch("https://fifty-owls-notice.loca.lt", {
-      method: "GET",
-      headers: {
-        "User-Agent": "BypassBot/1.0 (Custom-UA)",
-        "bypass-tunnel-reminder": "true",
-        "X-Forwarded-For": "1.2.3.4" // Optional: replace with your IP
-      },
-      mode: "no-cors"
-    });
-    console.log("Bypass request sent.");
-  } catch (e) {
-    console.error("Bypass failed", e);
-  }
-})();
+fetch("https://heavy-walls-play.loca.lt", {
+  method: "GET",
+  headers: {
+    "User-Agent": "BypassBot/1.0 (Custom-UA)",
+    "bypass-tunnel-reminder": "true",
+    "X-Forwarded-For": "8.8.8.8"
+  },
+  mode: "no-cors"
+}).then(() => console.log("Bypass sent"))
+.catch(e => console.error("Bypass error", e));
 </script>
+
+<!-- Rebuild marker -->
+<!-- Force rebuild Fri Jun 27 21:22:34 WAT 2025 -->
