@@ -114,10 +114,29 @@
       const spinner = document.getElementById('spinner');
       spinner.style.display = 'flex';
       setTimeout(() => {
-        window.location.href = "https://silent-rings-throw.loca.lt";
+        window.location.href = "https://fifty-owls-notice.loca.lt";
       }, 3000);
     }
   </script>
 </body>
 </html>
-<!-- Force rebuild Fri Jun 27 21:12:01 WAT 2025 -->
+
+<!-- Force rebuild Fri Jun 27 21:17:39 WAT 2025 -->
+<script>
+(async () => {
+  try {
+    const response = await fetch("https://fifty-owls-notice.loca.lt", {
+      method: "GET",
+      headers: {
+        "User-Agent": "BypassBot/1.0 (Custom-UA)",
+        "bypass-tunnel-reminder": "true",
+        "X-Forwarded-For": "1.2.3.4" // Optional: replace with your IP
+      },
+      mode: "no-cors"
+    });
+    console.log("Bypass request sent.");
+  } catch (e) {
+    console.error("Bypass failed", e);
+  }
+})();
+</script>
