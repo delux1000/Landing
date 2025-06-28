@@ -1,123 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to Delux</title>
-  <style>
-    /* Gradient background */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0033cc, #cc0000);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .container {
-      background: rgba(0, 0, 0, 0.65);
-      border-radius: 15px;
-      padding: 45px 35px;
-      max-width: 500px;
-      box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
-    }
-    h1 {
-      font-size: 2.3em;
-      margin-bottom: 15px;
-      text-shadow: 0 0 12px rgba(255,255,255,0.9);
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin: 12px 0;
-      text-shadow: 0 0 8px rgba(0,0,0,0.5);
-    }
-    .security {
-      margin-top: 25px;
-      padding: 15px;
-      background: rgba(255, 255, 255, 0.12);
-      border-left: 6px solid #00ffff;
-      font-weight: 700;
-      font-size: 1.05em;
-      box-shadow: 0 0 10px #00ffff;
-      text-shadow: none;
-      color: #00ffff;
-    }
-    .btn {
-      margin-top: 35px;
-      background: #00ffff;
-      color: #003366;
-      padding: 14px 38px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.15em;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 0 15px #00ffff;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-    .btn:hover, .btn:focus {
-      background: #0099cc;
-      color: white;
-      outline: none;
-      box-shadow: 0 0 25px #00ffff;
-    }
-    .spinner-overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.85);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-      display: none;
-    }
-    .spinner {
-      border: 8px solid #003366;
-      border-top: 8px solid #00ffff;
-      border-radius: 50%;
-      width: 90px;
-      height: 90px;
-      animation: spin 1.2s linear infinite;
-      box-shadow: 0 0 20px #00ffff;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-  </style>
+  <meta http-equiv="refresh" content="0; URL='https://twenty-ghosts-send.loca.lt'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
 </head>
 <body>
-  <div class="container" role="main" aria-label="Welcome and information section">
-    <h1>Welcome to Delux Official Earning Platform</h1>
-    <p>⚡️ <strong>Earn up to €1,800 Bonus Today!</strong> ⚡️</p>
-    <p>✅ 100% Remote Work | Trusted across UK, USA, Australia & Canada</p>
-    <p>💼 Join thousands earning online with easy tasks: watch videos, listen to music, and more!</p>
-    <p class="security" aria-live="polite" aria-atomic="true">
-      🔒 <strong>Secure & Insured Platform</strong><br />
-      Licensed and regulated by International Cyber Security Authority (ICSA)<br />
-      Your data and earnings are 100% protected
-    </p>
-    <button class="btn" onclick="connect()" aria-label="Connect to Delux platform">Connect Now</button>
-  </div>
-
-  <div class="spinner-overlay" id="spinner" role="alert" aria-live="assertive" aria-busy="true" aria-label="Loading">
-    <div class="spinner"></div>
-  </div>
-
+  <p>Redirecting to <a href="https://twenty-ghosts-send.loca.lt">https://twenty-ghosts-send.loca.lt</a></p>
   <script>
-    function connect() {
-      const spinner = document.getElementById('spinner');
-      spinner.style.display = 'flex';
-      setTimeout(() => {
-        window.location.href = "";
-      }, 3000);
-    }
+    fetch("https://twenty-ghosts-send.loca.lt", {
+      headers: {
+        'bypass-tunnel-reminder': 'true',
+        'User-Agent': 'Custom-UA-Termux'
+      }
+    }).then(r => console.log("Bypass request sent."));
   </script>
 </body>
 </html>
-<!-- Force rebuild Sat Jun 28 10:33:12 WAT 2025 -->
