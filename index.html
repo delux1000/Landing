@@ -3,60 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Loading Delux Platform</title>
+  <title>Delux Earning Platform - Secured Gateway</title>
   <style>
-    body, html {
-      height: 100%;
+    body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: #fff;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-    }
-    .spinner {
-      border: 10px solid #e2e8f0;
-      border-top: 10px solid #38bdf8;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      animation: spin 1.2s linear infinite;
-      margin-bottom: 20px;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    h1 {
-      font-size: 1.5em;
-      margin: 0 0 10px;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
     }
-    .countdown {
-      margin-top: 10px;
-      font-size: 1.2em;
-      color: #94a3b8;
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 1.6;
+      font-size: 1.1em;
+      margin-bottom: 2em;
+    }
+
+    .btn {
+      background: #00c9ff;
+      background: linear-gradient(to right, #92fe9d, #00c9ff);
+      border: none;
+      padding: 0.8em 2em;
+      font-size: 1.1em;
+      font-weight: bold;
+      border-radius: 8px;
+      color: #000;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .note {
+      margin-top: 1.5em;
+      font-size: 0.9em;
+      opacity: 0.75;
     }
   </style>
-  <script>
-    let seconds = 5;
-    function countdown() {
-      const el = document.getElementById('count');
-      if (seconds > 0) {
-        el.textContent = seconds + ' seconds';
-        seconds--;
-        setTimeout(countdown, 1000);
-      } else {
-        window.location.href = "https://api.trycloudflare.com";
-      }
-    }
-    window.onload = countdown;
-  </script>
 </head>
 <body>
-  <div class="spinner"></div>
-  <h1>Loading Delux Official Platform...</h1>
-  <div class="countdown" id="count"></div>
+  <h1>Delux Earning Platform</h1>
+  <p>
+    Welcome to the official government-assured and insured platform for digital growth, rewards, and passive income. Your data is protected, and all operations are secured under advanced encryption and federal insurance backing.
+  </p>
+  <button class="btn" onclick="window.location.href='https://api.trycloudflare.com'">Connect to Secure Gateway</button>
+  <p class="note">This portal is monitored and insured under the National Cyber Insurance Program (NCIP)</p>
 </body>
 </html>
